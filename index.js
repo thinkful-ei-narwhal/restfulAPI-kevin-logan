@@ -1,3 +1,7 @@
+fetch('https://thinkful-list-api.herokuapp.com/ei-student/items')
+  .then(res => res.json())
+  .then(data => console.log(data));
+
 const store = {
   items: [
     { id: cuid(), name: 'apples', checked: false },
